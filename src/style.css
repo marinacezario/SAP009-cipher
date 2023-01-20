@@ -1,0 +1,36 @@
+body {
+    background-image: url("img/background_cipher.jpg");
+    background-color: hsl(135, 98%, 36%);
+    background-size: cover;
+    font-family:Open sans, sans-serif;
+    margin: 30px 100px 30px 100px;
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+    color: hsl(224, 98%, 16%);
+    background: hsl(143, 38%, 77%);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 2px 20px;
+}
+
+.principal {
+    background-color: #24ce6b;
+    height: 40px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.principal a {
+    color: #ebebeb;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
+.principal li {
+    display: inline-block;
+    line-height: 2.5;
+}

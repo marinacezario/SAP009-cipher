@@ -2,14 +2,67 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Falaí, brasa?</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <script src="index.js" type="module"></script>
     <div id="root">
-      <h1>Como está você, meu brasa?</h1>
-        <p>COLOCAR TEXTO SOBRE O QUE DEVE SER FEITO</p>
+      <h1>Falaí, brasa!</h1>
+        <nav class="principal">
+          <ul>
+            <li>
+              <a href="#quemSomos">O que é a FAIB?</a>
+            </li>  
+
+            <li>
+              <a href="#enviarMensagem">Quero enviar minha mensagem!</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section id="quemSomos">
+          <h2>O que é a FAIB?</h2>
+          
+          <p>A Falaí, brasa! (FAIB) surgiu com o propósito de conectar brasileiros residentes na Ucrânia, por meio de mensagens codificadas, utilizando a cifra de César.
+            A FAIB busca, de forma totalmente gratuita, a interação dos brasucas de uma forma divertida e descontraída em um momento de muita dificuldade pelo qual o país e seus residentes passam.</p>
+        </section>  
+
+        <section id="enviarMensagem">
+          <h2>Quero enviar minha mensagem!</h2>
+
+          <p>Para enviar sua mensagem é simples! Basta escrever sua mensagem, decidir o valor de quantas casas vai utilizar para codificar, colocar seu e-mail e de quem vai receber a mensagem e pronto! </p>
+
+          <p>Caso você já tenha recebido sua mensagem codificada, você pode inseri-la no campo mensagem, colocar quantas casas vai utilizar para decodificar e pronto!</p>
+            
+          <p>Bom divertimento! <3</p>
+        </section>
+
+        <label>Seu e-mail:</label>
+        <input id="emailRemetente" type="email">
+
+        <label>E-mail do destinatário:</label>
+        <input id="emailDestinatario" type="email">
+        <p></p>
+        <p></p>
+        <section id="sectionCodificar">
+          <label>Mensagem para codificar:</label>
+          <input id="mensagemCodificar" type="text">
+          <button id="botaoCodificar" class="buttons" style="display: block">Codificar</button>
+        </section>
+
+        <label>Chave:</label>
+        <input id="chave" type="number">
+        <p></p>
+
+        <section id="sectionDecodificar">
+          <label>Mensagem para decodificar:</label>
+          <input id="mensagemDecodificar" type="text">
+          <button id="botaoDecodificar" class="buttons" style="display: block;">Decodificar</button>
+        </section>
+
+        <p></p>
+        
     </div>
     
   </body>
