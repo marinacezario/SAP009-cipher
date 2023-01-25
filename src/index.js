@@ -1,16 +1,23 @@
 import cipher from './cipher.js';
 
-document.getElementById("botaoDecodificar").addEventListener("click", )
-document.getElementById("botaoCodificar").addEventListener("click", inserirDados)
+const chave = document.getElementById("chave")
+const stringEncode = document.getElementById("mensagemCodificar")
+const stringDecode = document.getElementById("mensagemDecodificar")
+const botaoDecode = document.getElementById("botaoDecodificar").addEventListener("click", decodificar)
+const botaoEncode = document.getElementById("botaoCodificar").addEventListener("click", codificar)
+let mensagemErro = "Ops... Algo deu errado. Por favor, preencha os campos corretamente!"
+
+//chamar todos os ids (deslocamento, mensagens e botoes)
+//arrumar 
 
 function inserirDados(){
     if(document.getElementById("remetente").value != "" &&
     document.getElementById("destinatario").value != "" &&
     document.getElementById("mensagemCodificar").value != ""){
-        alert("Prontinho! Você receberá as novidades por e-mail!")
-      }else{
-        alert("Por favor, preencha os campos nome, e-mail e telefone!")
-      }
+        alert("")
+    }else{
+        alert("")
+    }
 }
 
 console.log(cipher);
