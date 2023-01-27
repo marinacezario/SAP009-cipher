@@ -5,6 +5,7 @@ body {
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;600&display=swap');
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
+    color: #011752;
     margin: 100px 100px 100px 100px;
     text-align: center;
     line-height: 2.0;
@@ -18,9 +19,13 @@ h1{
     text-align: center;
     color: hsl(224, 98%, 16%);
     background: hsl(143, 38%, 77%);
-    border: 1px solid transparent;
+    border: 1px solid #FFC928;
     border-radius: 4px;
     padding: 2px 20px;
+}
+
+.caixaTexto {
+    border: 1px solid #FFC928;
 }
 
 .principal {
