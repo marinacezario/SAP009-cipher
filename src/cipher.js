@@ -1,30 +1,33 @@
-//função codificar
-function cipherEncode(chave, stringEncode) {
-  for (let i = 0; i < stringEncode.lenght; i++) {
-    const letraEncode = stringEncode.charCodeAt(i);
 
-    console.log(i);
-    // more statements
-  }
-  if (letraEncode >= 65 && letraEncode <=90) {
-    const encode = ((letraEncode - 65 + chave) % 26) + 65;
-    const resultado = "";    
+const cipher = {
+//função codificar
+  encode: function (offset, string){
+    //colocar erro
+    if(offset !== Number || string !== []){
+      throw new TypeError();
+    }
+    let resultadoEncode = ""; 
+    //fazer com que a função analise letra por letra da mensagem com o for
+    for (let i = 0; i < string.lenght; i++) {
+          //buscar o numero na posição de cada letra 
+      const letraEncode = string.charCodeAt(i);
+      if (letraEncode >= 65 && letraEncode <=90) {
+        encode = ((letraEncode - 65 + offset) % 26) + 65;
+
+        result = resultadoEncode + String.fromCharCode(encode);
+      }//else if(letraEncode <= 64 || letraEncode >= 91){
+      //}
+    }
+    //console.log(resultadoEncode);
+    return resultadoEncode,
   }
 }
-
 //(codigoDaLetra + desloc) % tamDoAlfabeto =>
 //((codigoDaLetraASC - cod1aLetra + desloc) % tamDoAlfabeto) + cod1aLetra => 
 //"A".charCodeAt(0)
 //string.fromCharCode(72)
 //utilizar em um primeiro momento apenas letras minúsculas
 
-//while (offset < 0) {
-  offset += 26
-//}
-//if (letter >= 65 && letter <= 90) {
- // const calcOffsetUpper = ((letter - 65 + offset) % 26) + 65
-  //const offsetFinal = String.fromCharCode(calcOffsetUpper);
- // results.push(offsetFinal);
 
 //} else if (letter >= 97 && letter <= 122) {
  // const calcOffsetLower = ((letter - 97 + offset) % 26) + 97;
@@ -37,4 +40,4 @@ function cipherEncode(chave, stringEncode) {
 //}
 
 //return results.join("");
-//export default cipher;
+export default cipher;

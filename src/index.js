@@ -1,37 +1,31 @@
 import cipher from './cipher.js';
 
-const chave = document.getElementById("chave")
-const stringEncode = document.getElementById("mensagemCodificar")
-const stringDecode = document.getElementById("mensagemDecodificar")
-const botaoDecode = document.getElementById("botaoDecodificar").addEventListener("click", decodificar)
-const botaoEncode = document.getElementById("botaoCodificar").addEventListener("click", codificar)
-let mensagemErro = "Ops... Algo deu errado. Por favor, preencha os campos corretamente!"
+//declarar todas as variáveis - deslocamento, 2 mensagens e 2 botoes
+const deslocamento = document.getElementById("chave");
+const mensagemEncode = document.getElementById("mensagemCodificar").value.toUpperCase();
+const botaoEncode = document.getElementById("botaoCodificar");
+const mensagemDecode = document.getElementById("mensagemDecodificar");
+const botaoDecode = document.getElementById("botaoDecodificar").value.toUpperCase();
 
-//chamar todos os ids (deslocamento, mensagens e botoes)
-//arrumar 
+//adicionar evento para os botoes
+botaoEncode.addEventListener("click", acaoCodificar);
+botaoDecode.addEventListener("click", acaoDecodificar);
 
-function inserirDados(){
-    if(document.getElementById("remetente").value != "" &&
-    document.getElementById("destinatario").value != "" &&
-    document.getElementById("mensagemCodificar").value != ""){
-        //mensagem codificada
-    }else{
-        alert(mensagemErro)
-    }
+//chamar função para botão de codificação
+function acaoCodificar(){
+  mensagemDecode.value = cipher.encode(parseInt(deslocamento.value),mensagemEncode.value);
 }
 
-window.scrollBy(0, window.innerHeight)
-if (offset,string == null && offset,string == undefined && offset,string == 0){
-  shownResult.classList.add('error');
-  return shownResult.innerHTML = mensageError;
-}else {
-shownResult.classList.remove('error')
-shownResult.classList.add('result')
-return shownResult.innerHTML = resultCipher;
+//chamar funçao para botão de decodificação
+function acaoDecodificar(){
+  mensagemDecode.value = cipher.encode(parseInt(deslocamento.value),mensagemEncode.value);
 }
-console.log(cipher);
 
-//chamar botão codificar
-//chamar botão decodificar
-//adicionar evento botao codificar
-//adicionar evento botao decodificar
+//console.log(cipher);
+
+//if(mensagemCodificar.value ==="" || chave.value ===""){
+//alert("Preencha a chave e mensagem corretamente para codificar!")
+//}else{
+//deslocamento = Number(chave.value);
+//stringEncode = mensagemCodificar.value;
+//}
