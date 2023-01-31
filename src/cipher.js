@@ -6,21 +6,21 @@ const cipher = {
     if(offset !== Number || string !== [] || offset === 0 || string === 0){
       throw new TypeError();
     }
-    const resultadoEncode = ""; 
+
+    let resultadoEncode = ""; 
+    string = string.toUpperCase();
+
     //fazer com que a função analise letra por letra da mensagem com o for
     for (let i = 0; i < string.lenght; i++) {
-      //buscar o numero na posição de cada letra 
-      const letraEncode = string.charCodeAt(i);
+      const letraEncode = string.charCodeAt(i); //buscar o numero na posição de cada letra 
+      
       if (letraEncode >= 65 && letraEncode <=90) {
-        // eslint-disable-next-line no-undef
-        encode = ((letraEncode - 65 + offset) % 26) + 65;
+        resultadoEncode += String.fromCharCode (((letraEncode - 65 + offset) % 26) + 65);
 
-        // eslint-disable-next-line no-undef
-        result = resultadoEncode + String.fromCharCode(encode);
-      }//else if(letraEncode <= 64 || letraEncode >= 91){
-      //}
+      }else if(letraEncode <= 64 || letraEncode >= 91){
+        resultadoEncode += string.charAt(i);
+      }
     }
-    //console.log(resultadoEncode);
     return resultadoEncode;
   }
 }
