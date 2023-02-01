@@ -13,12 +13,12 @@ botaoDecode.addEventListener("click", acaoDecodificar);
 
 //chamar função para botão de codificação
 function acaoCodificar(){
-  mensagemEncode.value = cipher.encode(parseInt(deslocamento.value),mensagemDecode.value);
+  mensagemDecode.value = cipher.encode(parseInt(deslocamento.value),mensagemEncode.value);
 }
 
 //chamar funçao para botão de decodificação
 function acaoDecodificar(){
-  mensagemDecode.value = cipher.encode(parseInt(deslocamento.value),mensagemEncode.value);
+  mensagemEncode.value = cipher.decode(parseInt(deslocamento.value),mensagemDecode.value);
 }
 
 //console.log(cipher);
