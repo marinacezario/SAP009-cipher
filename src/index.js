@@ -13,12 +13,20 @@ botaoDecode.addEventListener("click", acaoDecodificar);
 
 //chamar função para botão de codificação
 function acaoCodificar(){
-  mensagemDecode.value = cipher.encode(parseInt(deslocamento.value),mensagemEncode.value);
+  if(deslocamento.value ==="" || mensagemEncode.value ===""){
+    alert("Por favor, preencha os campos necessários para codificar!")
+  }else{
+    mensagemDecode.value = cipher.encode(parseInt(deslocamento.value),mensagemEncode.value);
+  }
 }
 
 //chamar funçao para botão de decodificação
 function acaoDecodificar(){
-  mensagemEncode.value = cipher.decode(parseInt(deslocamento.value),mensagemDecode.value);
+  if(deslocamento.value ==="" || mensagemDecode.value ===""){
+    alert("Por favor, preencha os campos necessários para decodificar!")
+  }else{
+    mensagemEncode.value = cipher.decode(parseInt(deslocamento.value),mensagemDecode.value);
+  }
 }
 
 //console.log(cipher);

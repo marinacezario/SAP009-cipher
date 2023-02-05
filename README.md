@@ -1,124 +1,57 @@
-# Cifra de César
+
+## APRESENTAÇÃO PROJETO CIFRA DE CÉSAR - FALAÍ, BRASA!
+
+<img src="src/img/html5.svg" height="150" width="150">
+
+<img src="src/img/css3.svg" height="150" width="150">
+
+<img src="src/img/JS.svg" height="150" width="150">
+
 
 ## Índice
 
 * [1. Prefácio](#1-prefácio)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Considerações gerais](#3-considerações-gerais)
-* [4. Marco: Critérios de Aceitação Mínimos do Projeto](#5-marco-critérios-de-aceitação-mínimos-do-projeto)
-* [5. Marco Opcional: Adicione suporte para letras minúsculas e outros caracteres](#5-marco-opcional-adicione-suporte-para-letras-minúsculas-e-outros-caracteres)
-* [6. Considerações técnicas](#6-considerações-técnicas)
-* [7. Objetivos de aprendizagem](#7-objetivos-de-aprendizagem)
-* [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
-* [9. Para considerar o feedback do projeto](#9-para-considerar-o-feedback-do-projeto)
-
-***
-        APRESENTAÇÃO PROJETO CIFRA DE CÉSAR - FALAÍ, BRASA!
-
-//colocar os logos dos programas 
-
-## 1. Prefácio
-
-Cifrar significa codificar. A [cifra de César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar)
-é um dos primeiros tipos de criptografias conhecidas na história.
-O imperador romano Júlio César utilizava essa cifra para enviar
-ordens secretas aos seus generais no campo de batalha.
-
-A cifra de César é uma das técnicas mais simples de cifrar uma mensagem. É um
-tipo de cifra por substituição, em que cada letra do texto original é
-substituida por outra que se encontra há um número fixo de posições
-(deslocamento) mais a frente do mesmo alfabeto.
-
-Por exemplo se usarmos o deslocamento (_offset_) de 3 posições:
-
-* Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto com cifra:  D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
-* A letra A será D
-* A palavra CASA será FDVD
-
-Atualmente todas as cifras de substituição alfabética simples, são decifradas
-com facilidade e não oferecem muita segurança na comunicação por si mesma,
-mas a cifra de César muitas vezes pode fazer parte de um sistema
-mais complexo de criptografia, como
-a cifra de Vigenère, e tem aplicação no sistema ROT13.
-
-## 2. Resumo do projeto
-
-Neste projeto vo
-
-### Os objetivos gerais deste projeto são os seguintes
-
-* Tr
-## 3. Considerações gerais
-
-* 
-
-## 4. Marco: Critérios de Aceitação Mínimos do Projeto
-
-ddsds
-
-## 5. Marco Opcional: Adicione suporte para letras minúsculas e outros caracteres
-
-As 
-## 6. Considerações técnicas
-
-A 
-```
-
-### Descrição de scripts/arquivos
-
-* `REAME.md`: deve explicar como "deployar", instalar e executar a aplicação,
-  assim como uma introdução a aplicação, suas funcionalidades e as decisões que
-  foram tomadas.
+* [3. Interface](#3-interface)
+* [4. Deploy](#4-deploy)
+* [5. Desenvolvedora](#5-desenvolvedora)
 
 
-### Deploy
+## 1. Prefácio 📜
 
-D
+O Cifra de César é o primeiro projeto do bootcampo criado pela Laboratória para a formação de alunas devs Front-End. Este projeto foi desenvolvido de forma individual e teve com objetivo, por meio de um tema livre, a codificação e decodificação de mensagens com deslocamento de letras utilizando os programas HTML, CSS e JavaScript puro. 
 
-## 7. Objetivos de aprendizagem
+## 2. Resumo do projeto 💡
 
+Neste projeto, foram utilizados os programas HTML5, CSS3 e vanilla JavaScript. O tema "Falaí, brasa!" surgiu com o propósito de conectar brasileiros residentes na Ucrânia, por meio de mensagens codificadas, utilizando a cifra de César.
 
+O projeto utilizou a tabela ASCII para fazer o deslocamento de cada letra inserida no campo  de mensagem para codificar. Assim, o usuário pode inserir um número para fazer o devido deslocamento para adiconá-lo em cada caractere na codificação, os cálculos foram inseridos em condicionais de intervalos referente aos caracteres do alfabeto maiúsculos e minúsculos no código ASCII e o resultado final retorna a mensagem codificada.
 
-### HTML
+## 3. Interface ⚙️
 
+O tema escolhido para o projeto foram as cores da bandeira brasileira, pois tinha o objetivo em criar algo mais animado e que remetesse aos brasileiros, seu país de origem. Para que o projeto mantive uma uniformidade, a seguinte paleta de cores foi selecionada:
 
+<figure>
+<img src="src/img/paleta_cores_brasil.jpg" alt="Paleta de cores" max-height="400" max-width="400">
+<figcaption>Paleta de cores utilizada como referência</figcaption>
+</figure>
 
-### CSS
+A página ainda conta com um menu central para facilitar a navegação do usuário, uma breve explicação do que é a FAIB e como enviar sua mensagem. Há também o espaço ¨chave¨ para que o usuário coloque o número de deslocamento desejado e as caixas para codificar e decodificar. A página também é responsiva quando a janela é aumentada ou diminuída e emite um alerta quando um dos campos não é preenchido corretamente.
 
-- [ 
+<figure>
+<img src="src/img/pagina_erro_encode.png" alt="Simulação erro codificar" max-height="400" max-width="400">
+<figcaption>Erro codificar</figcaption>
+</figure>
 
-### Web APIs
+<figure>
+<img src="src/img/pagina_erro_decode.png" alt="Simulação erro decodificar" max-height="400" max-width="400">
+<figcaption>Erro decodificar</figcaption>
+</figure>
 
-- [ ]
+## 4. Deploy 🖥️
 
-### JavaScript
+[Projeto Cipher - Falaí, brasa!](https://marinacezario.github.io/SAP009-cipher/)
 
+## 5. Desenvolvedora 👩‍💻
 
-
-### Controle de Versões (Git e GitHub)
-
-
-
-### Centrado no usuário
-
-- 
-
-### Design de produto
-
--
-
-## 8. Guias, dicas e leituras complementares
-
-### Primeiros passos
-
-1. 
-
-### Recursos extras
-
-A 
-
-## 9. Para considerar o feedback do projeto
-
-
-* [ ] O README contém uma definição de produto.
+Marina Cezário Guimarães Pereira.
