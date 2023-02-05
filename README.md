@@ -1,13 +1,6 @@
 
 ## APRESENTAÇÃO PROJETO CIFRA DE CÉSAR - FALAÍ, BRASA!
 
-<img src="src/img/html5.svg" height="150" width="150">
-
-<img src="src/img/css3.svg" height="150" width="150">
-
-<img src="src/img/JS.svg" height="150" width="150">
-
-
 ## Índice
 
 * [1. Prefácio](#1-prefácio)
@@ -31,22 +24,18 @@ O projeto utilizou a tabela ASCII para fazer o deslocamento de cada letra inseri
 
 O tema escolhido para o projeto foram as cores da bandeira brasileira, pois tinha o objetivo em criar algo mais animado e que remetesse aos brasileiros, seu país de origem. Para que o projeto mantive uma uniformidade, a seguinte paleta de cores foi selecionada:
 
-<figure>
-<img src="src/img/paleta_cores_brasil.jpg" alt="Paleta de cores" max-height="400" max-width="400">
-<figcaption>Paleta de cores utilizada como referência</figcaption>
-</figure>
+![*Paleta de cores utilizada como referência*](/src/img/paleta_cores_brasil.jpg)
+<br>
 
 A página ainda conta com um menu central para facilitar a navegação do usuário, uma breve explicação do que é a FAIB e como enviar sua mensagem. Há também o espaço ¨chave¨ para que o usuário coloque o número de deslocamento desejado e as caixas para codificar e decodificar. A página também é responsiva quando a janela é aumentada ou diminuída e emite um alerta quando um dos campos não é preenchido corretamente.
 
-<figure>
-<img src="src/img/pagina_erro_encode.png" alt="Simulação erro codificar" max-height="400" max-width="400">
-<figcaption>Erro codificar</figcaption>
-</figure>
+![*Simulação erro codificar*](/src/img/pagina_erro_encode.png)
 
-<figure>
-<img src="src/img/pagina_erro_decode.png" alt="Simulação erro decodificar" max-height="400" max-width="400">
-<figcaption>Erro decodificar</figcaption>
-</figure>
+<br>
+
+![*Simulação erro decodificar*](/src/img/pagina_erro_decode.png)
+
+<br>
 
 ## 4. Deploy 🖥️
 
